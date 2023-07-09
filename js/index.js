@@ -9,13 +9,12 @@ form.addEventListener("submit", function (event) {
     let n = 0;
     for (let i = 0; i <= 11; i++) {
     if (users[i]["name"] == username && users[i]["password"] == password) {
-        document.getElementById("show").innerHTML = "<p id='success'>You have successfully logged in</p>";
         window.location = "./home.html";
         n++;
         break;
     }
 
     } if (n == 0) {
-    document.getElementById("show").innerHTML = "<p id='error'>Incorrect username or password</p>";
+    document.getElementById("show").innerHTML = "<p id='card-footer'>Incorrect Username or Password!</p>";
 }
 });

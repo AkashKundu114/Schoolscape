@@ -1,15 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
 }
 
+:root {
+  font-size: 20px;
+  box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(./img/pc-home.png);
-    overflow-x: hidden;
+  font: 1em/1.618 Inter, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
+  padding: 30px;
+  
+  color: #224;
+  background:
+    url(https://source.unsplash.com/E8Ufcyxz514/2400x1823)
+    center / cover no-repeat fixed;
 }
 
 .subheading {
@@ -20,3 +48,46 @@ body {
     font-size: 50px;
     font-family: 'Montserrat', sans-serif;
 }
+
+.card {
+  min-width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 35px;
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+
+  align-items: center;
+}
+
+.card-footer {
+  font-size: 0.65em;
+  color: #446;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background: rgb(209,107,165);
+background: linear-gradient(90deg, rgba(209,107,165,1) 0%, rgba(134,168,231,1) 50%, rgba(95,251,241,1) 100%);
+    }
+    
+    .subheading {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+        margin: 20vh 3vh 0 3vh;
+    }
