@@ -10,7 +10,7 @@ form.addEventListener("submit", function (event) {
     for (let i = 0; i <= 11; i++) {
     if (users[i]["name"] == username && users[i]["password"] == password) {
         document.getElementById("show").innerHTML = "<p id='success'>You have successfully logged in</p>";
-        window.location = "app.html";
+        window.location = "./home.html";
         n++;
         break;
     }
