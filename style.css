@@ -35,7 +35,7 @@ body {
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(./img/bg-desktop.png);
+  background-image: url(./assets/img/bg-desktop.png);
   overflow-x: hidden;
 }
 
@@ -129,7 +129,7 @@ input[type = password], select {
 @media screen and (max-width: 600px) {
 
     body {
-        background-image: url(./img/bg-mobile.png);
+        background-image: url(./assets/img/bg-mobile.png);
         background-repeat: no-repeat;
         background-size: 100vh;
     }

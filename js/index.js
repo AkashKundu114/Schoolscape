@@ -9,7 +9,7 @@ form.addEventListener("submit", function (event) {
     let n = 0;
     for (let i = 0; i <= 11; i++) {
     if (users[i]["name"] == username && users[i]["password"] == password) {
-        window.location = "./home.html";
+        window.location = "../clock/index.html";
         n++;
         break;
     }
